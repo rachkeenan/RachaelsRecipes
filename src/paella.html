@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe Blog">
+    
+    <title>Home page</title>
+    <title>Chicken and Chorizo Paella</title>
+    
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lustria|Snippet|Imprima">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- JavaScript for dark/light mode theme -->
+    <script src="/Scripts/themeSwitcher.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("h1").slideDown(1000);
+        });
+    </script>
+
+    <!-- JavaScript for changing font size -->
+    <script src="/Scripts/accessibility.js"></script>
+
+    <style>
+        h1{
+            font-family: "Snippet", sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 4px 4px 4px #ababab;
+        }
+
+        h2 {
+            font-family: "Lustria", sans-serif;
+        }
+
+        body{
+            font-family: "Imprima", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="request_recipe_form.html">Request Recipe</a></li>
+                <li>
+                    <input id="darkModeCheckbox" type="checkbox" hidden onchange="toggleDarkMode(this.checked);" />
+                    <label id="darkModeLabel" for="darkModeCheckbox">🌙</label>
+                </li>
+                <li>
+                    <input id="setFontSmall" type="checkbox" hidden onchange="setFontSize('1em');" />
+                    <label class="font" id="setFontSmallLabel" for="setFontSmall">A<sup>-</sup></label>
+                    <input id="setFontLarge" type="checkbox" hidden onchange="setFontSize('2em');" />
+                    <label class="font" id="setFontLargeLabel" for="setFontLarge">A<sup>+</sup></label>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 hidden>Chicken and Chorizo Paella</h1>
+            <p>Chicken and Chorizo Paella is a great dish if you are looking for flavor or you simply want to
+                try
+                some thing new.</p>
+        </main>
+    </header>
+
+    <main id="recipeMain">
+        <img src="backgroundImages/paella1.jpg" alt="Paella dish" height="200px" width="300px" style="float:right; padding-right: 20px;"/>
+        <article class="recipe-details">
+            <small>⏱️ Prep Time: 20mins | ⏱️ Cooking Time: 40mins</small>
+            <h3>Ingredients</h3>
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>1 tbsp olive oil<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>2 chicken breast fillets, cut into chunks<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>2 small onions, finely sliced<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>1 fat garlic clove, crushed<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>140g cooking chorizo, sliced (can add more depending on
+            preferences)<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>300g paella rice<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>850ml hot chicken or vegetable stock (2 stock cubes)<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>200g frozen peas<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>1 lemon, cut into wedges, to serve<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>Small bunch of parsley, finely chopped, to serve<br />
+            <h5>Spice Mix</h5>
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>1 tsp paprika<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>pinch of saffron<br />
+            <input type="checkbox" name="ingredients" label="ingredients-paella"/>1 tsp turmeric<br />
+
+            <h3>Method</h3>
+            <ol>
+                <li>Heat the olive oil in a deep frying pan over a high heat. Brown the chicken all over - don't cook
+                    completely. Once browned, transfer to a plate.</li>
+                <li>Reduce the heat to low, add the onions and cook slowly until softened, about 10 mins. Add the
+                    garlic, stir for 1 min, then toss in the chorizo and fry until it releases its oils.</li>
+                <li>Stir in the spices, then tip in the rice. Stir to coat the rice in the oils and spices for about 2
+                    mins, then pour in the stock. Bring to the boil, return the chicken to the pan and simmer for about
+                    20 mins, stirring occasionally.</li>
+                <li>Add the peas to the pan and simmer for a further 5 mins until the rice is cooked and the chicken is
+                    tender. Season well and serve with the lemon and parsley.</li>
+            </ol>
+
+            <img src="backgroundImages/paellaPan.jpeg" alt="Paella pan" height="100px" style="float:right; padding-right: 20px;"/>
+            <h3>Equipment Needed:</h3>
+            <ul>
+                <li>Deep frying pan, with lid or tin foil to cover</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting Rachael's Recipes! If you require any further details please contact:</p>
+        <a href="rachaelsrecipes@recipes.com">rachaelsrecipes@recipes.com</a>
+    </footer>
+
+    <!-- Javascript for user's theme preference -->
+    <script src="/Scripts/themePreference.js"></script>
+</body>
+
+</html>

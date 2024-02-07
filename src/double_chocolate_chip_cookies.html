@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe Blog">
+    
+    <title>Home page</title>
+    <title>Double Chocolate Chip Cookies</title>
+    
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lustria|Snippet|Imprima">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- JavaScript for dark/light mode theme -->
+    <script src="/Scripts/themeSwitcher.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("h1").slideDown(1000);
+        });
+    </script>
+
+    <!-- JavaScript for changing font size -->
+    <script src="/Scripts/accessibility.js"></script>
+
+    <style>
+        h1{
+            font-family: "Snippet", sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 4px 4px 4px #ababab;
+        }
+
+        h2 {
+            font-family: "Lustria", sans-serif;
+        }
+
+        body{
+            font-family: "Imprima", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="cookiesHeader">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="request_recipe_form.html">Request Recipe</a></li>
+                <li>
+                    <input id="darkModeCheckbox" type="checkbox" hidden onchange="toggleDarkMode(this.checked);" />
+                    <label id="darkModeLabel" for="darkModeCheckbox">🌙</label>
+                </li>
+                <li>
+                    <input id="setFontSmall" type="checkbox" hidden onchange="setFontSize('1em');" />
+                    <label class="font" id="setFontSmallLabel" for="setFontSmall">A<sup>-</sup></label>
+                    <input id="setFontLarge" type="checkbox" hidden onchange="setFontSize('2em');" />
+                    <label class="font" id="setFontLargeLabel" for="setFontLarge">A<sup>+</sup></label>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 hidden>Double Chocolate Chip Cookies</h1>
+            <p>These delicious double chocolate chip cookies have a soft center and crunchy outer.</p>
+        </main>
+    </header>
+
+    <main id="recipeMain">
+        <img src="backgroundImages/cookies1Background.jpg" alt="Chocolate Chip Cookies" height="200px" width="300px" style="float:right; padding-right: 20px;"/>
+        <article class="recipe-details">
+            <small>⏱️ Prep Time: 10mins | ⏱️ Baking Time: 10mins</small>
+            <h3>Ingredients</h3>
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />115g softened
+            butter<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />100g light brown
+            sugar<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />75g granulated
+            sugar<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />1tsp vanilla
+            extract<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />1 egg<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />150g all purpose
+            flour (plain flour)<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />30g cocoa
+            powder<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />1/4 tsp
+            salt<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />1/2 tsp baking
+            powder<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />85g white
+            chocolate chips<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />175g milk
+            chocolate chips<br />
+            <input type="checkbox" name="ingredients" label="ingredients-cookies" class="ingredients" />100g smarties
+            (optional)<br />
+
+            <h3>Method</h3>
+            <ol>
+                <li>Preheat the oven to 175ºC/350ºF</li>
+                <li>Put the softened butter, brown sugar and granulated sugar into the bowl of your stand mixer. Beat
+                    them together until the mixture is lighter and everything is well combined. (about 3 minutes)</li>
+                <li>Add the vanilla extract and the egg, then beat once more until everything is creamy and even lighter
+                    in colour. (This takes about 3-4 minutes)</li>
+                <li>Add in the flour, cocoa powder, salt and baking soda, then mix until the flour is just combined.
+                </li>
+                <li>Tip in the the white and milk chocolate chips into the mixture.</li>
+                <li>Then mix until everything is combined.</li>
+                <li>Roll golf ball sized balls of dough and place them onto a baking sheet lined with cooking paper.
+                    Ensure they are 5cm (2 inches) apart</li>
+                <li>Bake for 10 minutes until lightly golden. (They will be soft when you take them from the oven!)</li>
+                <li>Carefully transfer the cookies still on the cooking paper to a cooling rack, then use a spoon to
+                    gently flatten the still soft cookies.</li>
+                <li>Leave the cookies to cool.</li>
+            </ol>
+
+            <h3>Equipment Needed</h3>
+            <img src="backgroundImages/mixingBowl.webp" height="100px" alt="mixing bowl containing chocolate mixture" style="float:right"/>
+            <ul>
+                <li>Large mixing bowl (if not using a stand mixer)</li>
+                <li>Wooden spoon or spatula, for mixing</li>
+                <li>Baking trays</li>
+                <li>Grease proof paper</li>
+                <li>Cooling rack</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting Rachael's Recipes! If you require any further details please contact:</p>
+        <a href="rachaelsrecipes@recipes.com">rachaelsrecipes@recipes.com</a>
+    </footer>
+
+    <!-- Javascript for user's theme preference -->
+    <script src="/Scripts/themePreference.js"></script>
+</body>
+
+</html>

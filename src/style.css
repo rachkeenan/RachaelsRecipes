@@ -1,0 +1,257 @@
+﻿body {
+    background-color: #beb9b9;
+    margin: 0 auto;
+    font-family: Arial;
+    font-size: 1em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    background-image: url(backgroundImages/backgroundImage1.webp);
+    background-size: 100%;
+    color: #241f1a;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgb(231,212,202);
+    background: radial-gradient(circle, rgba(231,212,202,1) 0%, rgba(218,224,224,1) 100%);
+}
+
+header nav ul {
+    padding: 0px;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 5px;
+}
+
+header a {
+    color: #635144;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header main {
+    margin: 0 auto;
+    padding: 10px 50px;
+    max-width: 970px;
+    text-align: center;
+}
+
+header .font {
+    color: #635144;
+}
+
+header a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+}
+
+header nav label:hover {
+    cursor: pointer;
+}
+
+/* End Header */
+
+/* Main */
+body>main {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 25px 0px;
+}
+
+main h2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+
+main article p {
+    padding-bottom: 10px;
+}
+
+/* Recipe Page Recipe Cards */
+.recipe-card {
+    margin: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    border-radius: 20px;
+    outline: solid 1px lightgrey;
+    background: rgb(190,185,185);
+    background: radial-gradient(circle, rgba(190,185,185,1) 0%, rgba(140,136,152,1) 35%, rgba(162,156,167,1) 100%);
+}
+
+.recipe-card:hover {
+    box-shadow: 0 5px 10px 0 #635144, 0 10px 20px 0 #635144;
+}
+
+.recipe-card-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.recipe-card-details {
+    padding: 10px;
+}
+
+.recipe-card-details h3 {
+    margin: 0;
+}
+
+.recipe-details p {
+    display: inline-block;
+    padding-right: 100px;
+    font-style: italic;
+    font-size: small;
+}
+
+/* End Recipe Page Recipe Cards */
+
+/* Index Recipes */
+.recent-recipes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-card-small {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    width: 200px;
+    border-radius: 20px;
+    outline: solid 1px lightgrey;
+    background: rgb(162,156,167);
+    background: radial-gradient(circle, rgba(162,156,167,1) 0%, rgba(140,136,152,1) 35%, rgba(190,185,185,1) 100%);
+}
+
+.recipe-card-small:hover {
+    box-shadow: 0 5px 10px 0 #635144, 0 10px 20px 0 #635144;
+}
+
+.recipe-card-small h3 {
+    padding: 5px;
+    margin: 0;
+}
+
+.recipe-card-small-image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/* End Index Recipes */
+
+/* Recipe pages */
+#recipeMain article {
+    padding: 30px 20px;
+}
+
+/* End recipe pages */
+
+/* Recipe request page */
+form {
+    padding: 20px;
+}
+
+form table tr td {
+    padding: 10px 0;
+}
+
+.submitButton {
+    background-color: #a29ca7;
+    border: none;
+    color: 241f1a;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 6px;
+}
+
+/* End recipe request page */
+
+/* Submission page */
+main p {
+    text-align: center;
+}
+
+/* End submission page */
+/* End Main */
+
+/* Footer */
+footer {
+    padding: 1em 0px;
+    text-align: center;
+    background-color: #8c8898;
+}
+
+footer small {
+    display: block;
+    padding-top: 10px;
+}
+
+/* End Footer */
+
+/* Darkmode */
+.dark {
+    background-color: #241f1a;
+    color: white;
+}
+
+.dark .headerMain {
+    background-color: #4a433b;
+    color: white;
+}
+
+.dark header nav {
+    background: #241f1a;
+}
+
+.dark header a {
+    color: #b1c2d1
+}
+
+.dark .recipe-card-small {
+    background-color: #4a433b;
+}
+
+.dark .recipe-card {
+    background-color: #4a433b;
+}
+
+.dark footer {
+    background-color: #4a433b;
+}
+
+.dark a {
+    color: White;
+}
+
+.dark .font {
+    color: #b1c2d1;
+}
+/* End Darkmode */

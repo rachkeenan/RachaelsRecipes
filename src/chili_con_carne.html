@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe Blog">
+
+    <title>Home page</title>
+    <title>Chili Con Carne</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lustria|Snippet|Imprima">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- JavaScript for dark/light mode theme -->
+    <script src="/Scripts/themeSwitcher.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("h1").slideDown(1000);
+        });
+    </script>
+
+    <!-- JavaScript for changing font size -->
+    <script src="/Scripts/accessibility.js"></script>
+
+    <style>
+        h1 {
+            font-family: "Snippet", sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 4px 4px 4px #ababab;
+
+        }
+
+        h2 {
+            font-family: "Lustria", sans-serif;
+        }
+
+        body {
+            font-family: "Imprima", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="request_recipe_form.html">Request Recipe</a></li>
+                <li>
+                    <input id="darkModeCheckbox" type="checkbox" hidden onchange="toggleDarkMode(this.checked);" />
+                    <label id="darkModeLabel" for="darkModeCheckbox">🌙</label>
+                </li>
+                <li>
+                    <input id="setFontSmall" type="checkbox" hidden onchange="setFontSize('1em');" />
+                    <label class="font" id="setFontSmallLabel" for="setFontSmall">A<sup>-</sup></label>
+                    <input id="setFontLarge" type="checkbox" hidden onchange="setFontSize('2em');" />
+                    <label class="font" id="setFontLargeLabel" for="setFontLarge">A<sup>+</sup></label>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 hidden>Chili Con Carne</h1>
+            <p>Chili Con Carne is the perfect comfort dish, it is packed with vegetables and flavors, and is
+                very
+                easy to make.</p>
+        </main>
+    </header>
+
+    <main id="recipeMain">
+        <img src="backgroundImages/chiliConCarne1.jpg" alt="Chili con carne in a bowl" height="200px" style="float:right; padding-right: 20px;" />
+        <article class="recipe-details">
+            <small>⏱️ Prep Time: 40mins | ⏱️ Cooking Time: 60mins</small>
+            <h3>Ingredients</h3>
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1/4 pint/150ml of water<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1 dessertspoon of flour<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1 clove garlic<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1 teaspoon chilli powder<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1 red pepper, sliced<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1lb/450g lean minced lamb/beef<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1 onion, finely chopped<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1 medium carrot, sliced<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />2 dessertspoons peas<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />5 mushrooms, sliced<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1/2 tin tomatoes<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />2 dessertspoons tomato sauce<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1/2 tin kidney beans<br />
+            <input type="checkbox" name="ingredients" label="ingredients-chili" />1 low salt beef stock cube<br />
+
+            <h3>Method</h3>
+            <ol>
+                <li>Chop onion and garlic. Dissolve beef stock cube in 150ml of boiling water.</li>
+                <li>Put minced beef/lamb in a dry frying pan. Cook until well browned, stirring all the time. Drain off
+                    excess from the pan.</li>
+                <li>Add onions and garlic to the pan and cook for 2-3 mins. Sprinkle on the flour and chilli powder and
+                    cook for 1-2 mins, stirring all the time.</li>
+                <li>Add beef stock, tomato sauce and tinned tomatoes. Bring to the boil.</li>
+                <li>Add kidney beans, carrot, peas, mushrooms and pepper to the mince. Simmer for 20mins.</li>
+            </ol>
+
+            <img src="backgroundImages/deepFryingPan.jpg" alt="Deep dish frying pan" height="100px" width=""
+                style="float:right; padding-right: 20px; padding-bottom: 20px;" />
+            <h3>Equipment Needed:</h3>
+            <ul>
+                <li>Deep frying pan, with lid or tin foil to cover</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting Rachael's Recipes! If you require any further details please contact:</p>
+        <a href="rachaelsrecipes@recipes.com">rachaelsrecipes@recipes.com</a>
+    </footer>
+
+    <!-- Javascript for user's theme preference -->
+    <script src="/Scripts/themePreference.js"></script>
+</body>
+
+</html>

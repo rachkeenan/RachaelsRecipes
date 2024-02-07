@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe Blog">
+
+    <title>Home page</title>
+    <title>Recipes</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lustria|Snippet|Imprima">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- JavaScript for dark/light mode theme -->
+    <script src="/Scripts/themeSwitcher.js"></script>
+
+    <!-- JavaScript for changing font size -->
+    <script src="/Scripts/accessibility.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Slide effect on h1
+            $("h1").slideDown(1000);
+
+            // Fade effect of recipe cards
+            $(".recipe-card").hover(function () {
+                $(this).find(".recipe-timing").fadeIn(1000);
+            });
+        });
+    </script>
+
+    <style>
+        h1 {
+            font-family: "Snippet", sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 4px 4px 4px #ababab;
+        }
+
+        h2 {
+            font-family: "Lustria", sans-serif;
+        }
+
+        body {
+            font-family: "Imprima", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="index"><a href="index.html">Home</a></li>
+                <li id="recipe"><a href="recipes.html">Recipes</a></li>
+                <li id="request"><a href="request_recipe_form.html">Request Recipe</a></li>
+                <li>
+                    <input id="darkModeCheckbox" type="checkbox" hidden onchange="toggleDarkMode(this.checked);" />
+                    <label id="darkModeLabel" for="darkModeCheckbox">🌙</label>
+                </li>
+                <li>
+                    <input id="setFontSmall" type="checkbox" hidden onchange="setFontSize('1em');" />
+                    <label class="font" id="setFontSmallLabel" for="setFontSmall">A<sup>-</sup></label>
+                    <input id="setFontLarge" type="checkbox" hidden onchange="setFontSize('2em');" />
+                    <label class="font" id="setFontLargeLabel" for="setFontLarge">A<sup>+</sup></label>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 hidden>Rachael's Recipes</h1>
+            <p>
+                Rachael's Recipes incorporates all of the recipes I enjoy to cook and bake, I hope you enjoy them as
+                much as
+                my family and myself.
+                Please feel free to send an email if you have any questions or submit a recipe request form.
+                Enjoy all of the tasty treats!!
+            </p>
+        </main>
+    </header>
+
+    <main>
+        <article class="recipe-card">
+            <a href="double_chocolate_chip_cookies.html"><img class="recipe-card-image" src="Images/Double Chocolate Chip Cookies.jpg" height="100px"
+                alt="Double Chocolate Chip Cookies" /></a>
+            <div class="recipe-card-details">
+                <h2><a href="double_chocolate_chip_cookies.html">Double Chocolate Chip Cookies</a></h2>
+                <small hidden class="recipe-timing">⏱️ 10 mins prep | ⏱️ 10 mins baking</small>
+                <p>These delicious double chocolate chip cookies have a soft center and crunchy outer.</p>
+            </div>
+        </article>
+        <article class="recipe-card">
+            <a href="red_velvet_cupcakes.html"><img class="recipe-card-image" src="Images/Red Velvet Cupckaes.jpg" height="100px"
+                alt="Red Velvet Cupcakes" /></a>
+            <div class="recipe-card-details">
+                <h2><a href="red_velvet_cupcakes.html">Red Velvet Cupcakes</a></h2>
+                <small hidden class="recipe-timing">⏱️ 30 mins prep | ⏱️ 25 mins baking</small>
+                <p>These moist and chocolatey red velvet cupcakes are perfect for any occasion.</p>
+            </div>
+        </article>
+        <article class="recipe-card">
+            <a href="paella.html"><img class="recipe-card-image" src="Images/Chicken and Chorizo Paella.jpg" height="100px" width="100px"
+                alt="Chicken and Chorizo Paella" /></a>
+            <div class="recipe-card-details">
+                <h2><a href="paella.html">Chicken and Chorizo Paella</a></h2>
+                <small hidden class="recipe-timing">⏱️ 20 mins prep | ⏱️ 40 mins cooking</small>
+                <p>Chicken and Chorizo Paella is a great dish if you are looking for flavor or you simply want to
+                    try
+                    some thing new.</p>
+            </div>
+        </article>
+        <article class="recipe-card">
+            <a href="chili_con_carne.html"><img class="recipe-card-image" src="Images/Chili Con Carne.jpg" height="100px" alt="Chili Con Carne"/></a>
+            <div class="recipe-card-details">
+                <h2><a href="chili_con_carne.html">Chili Con Carne</a></h2>
+                <small hidden class="recipe-timing">⏱️ 40 mins prep | ⏱️ 60 mins cooking</small>
+                <p>Chili Con Carne is the perfect comfort dish, it is packed with vegetables and flavors, and is
+                    very
+                    easy to make.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting Rachael's Recipes! If you require any further details please contact:</p>
+        <a href="rachaelsrecipes@recipes.com">rachaelsrecipes@recipes.com</a>
+    </footer>
+
+    <!-- Javascript for user's theme preference -->
+    <script src="/Scripts/themePreference.js"></script>
+</body>
+
+</html>

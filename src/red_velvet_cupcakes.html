@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe Blog">
+    
+    <title>Home page</title>
+    <title>Red Velvet Cupcakes</title>
+    
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lustria|Snippet|Imprima">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- JavaScript for dark/light mode theme -->
+    <script src="/Scripts/themeSwitcher.js"></script>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("h1").slideDown(1000);
+        });
+    </script>
+
+    <!-- JavaScript for changing font size -->
+    <script src="/Scripts/accessibility.js"></script>
+
+    <style>
+        h1{
+            font-family: "Snippet", sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 4px 4px 4px #ababab;
+
+        }
+
+        h2 {
+            font-family: "Lustria", sans-serif;
+        }
+
+        body{
+            font-family: "Imprima", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="request_recipe_form.html">Request Recipe</a></li>
+                <li>
+                    <input id="darkModeCheckbox" type="checkbox" hidden onchange="toggleDarkMode(this.checked);" />
+                    <label id="darkModeLabel" for="darkModeCheckbox">🌙</label>
+                </li>
+                <li>
+                    <input id="setFontSmall" type="checkbox" hidden onchange="setFontSize('1em');" />
+                    <label class="font" id="setFontSmallLabel" for="setFontSmall">A<sup>-</sup></label>
+                    <input id="setFontLarge" type="checkbox" hidden onchange="setFontSize('2em');" />
+                    <label class="font" id="setFontLargeLabel" for="setFontLarge">A<sup>+</sup></label>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1 hidden>Red Velvet Cupcakes</h1>
+            <p>These moist and chocolatey red velvet cupcakes are perfect for any occasion.</p>
+        </main>
+    </header>
+
+    <main id="recipeMain">
+        <img src="backgroundImages/redVelvetCupcakesBackground3.jpg" height="200px" width="300px" style="float:right; padding-right: 20px;"  alt="Red Velvet Cupcakes Image"/>
+        <article class="recipe-details">
+            <small>⏱️ Prep Time: 30mins | ⏱️ Baking Time: 25mins</small>
+            <h3>Ingredients</h3>
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>2 large egg white<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>2 large egg yolks<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>160g all purpose flour (plain flour)<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>32g cornstarch<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>1/2 tsp baking powder<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>4tsp cocoa powder<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>1/4 tsp salt<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>60g butter, room temperature<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>200g granulated sugar<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>120ml vegetable or canola oil<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>2 tsp vanilla extract<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>1/2 tsp distilled white vinegar<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>Red food colouring<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>120ml buttermilk, room temperature<br />
+            <h5>Cream Cheese Frosting</h5>
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>100g slightly salted butter, softened<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>225g icing sugar<br />
+            <input type="checkbox" name="ingredients" label="ingredients-red-velvet"/>100g full fat cream cheese, stirred to loosen<br />
+
+            <h3>Method</h3>
+            <ol>
+                <li>Preheat oven to 350°F (177°C). Line a 12-count muffin pan with cupcake liners. This recipe makes 14
+                    cupcakes, so you will have 2 cupcakes to bake in a 2nd batch.</li>
+                <li>With a handheld or stand mixer fitted with a whisk attachment, beat 2 egg whites on high speed in a
+                    medium bowl until soft peaks form, about 2-3 minutes. Set aside.</li>
+                <li>Sift the flour and cornstarch together to make sure it is evenly combined. Whisk this, along with
+                    baking soda, cocoa powder, and salt together in a medium bowl. Set aside.</li>
+                <li>Using a handheld or stand mixer fitted with a paddle attachment, beat the butter on high speed until
+                    smooth and creamy – about 1 minute. Add the sugar and beat on high speed for 2 minutes until creamed
+                    together fairly well. Scrape down the sides and up the bottom of the bowl with a rubber spatula as
+                    needed. Add the oil and beat on high for 2 minutes. The butter may look “piece-y” and not completely
+                    combine with the oil. This is normal and ok.</li>
+                <li>Add 2 egg yolks and the vanilla. Beat on medium-high speed until combined. Scrape down the sides and
+                    up the bottom of the bowl with a rubber spatula as needed. Beat in the vinegar and the food
+                    coloring– until you reach your desired color. I use 2 Tablespoons. With the mixer on low speed, add
+                    the dry ingredients in three additions alternating with the buttermilk, beginning and ending with
+                    the dry ingredients, and mixing each addition just until incorporated. Do not overmix. Fold whipped
+                    egg whites into cupcake batter with a rubber spatula or wooden spoon. The batter will be silky and
+                    slightly thick. (If there are still pieces of butter – and there were in 1 test batch for me –
+                    again, this is ok. They will melt inside as the cupcakes bake. Making them even more buttery.)</li>
+                <li>Spoon batter into cupcake liners filling 1/2 - 2/3 of the way full. Bake for 20-21 minutes or until
+                    the tops of the cupcakes spring back when gently touched and a toothpick inserted in the center
+                    comes out clean. Don’t overbake; your cupcakes will dry out. Allow to cool in the pan for 5 minutes,
+                    then transfer to a rack to cool completely.</li>
+                <li>Prepare cream cheese frosting. Beat together the butter and icing sugar using an electric whisk or
+                    by hand until pale and fluffy, about 3 mins, then beat in the cream cheese for a further 1-2 mins
+                    until well combined.</li>
+                <li>Once the cakes are cool, use a piping bag fitted with a star nozzle to cover the cakes with the
+                    cream cheese icing, or dollop the icing on top using a spoon.</li>
+            </ol>
+
+            <h3>Equipment Needed:</h3>
+            <img src="backgroundImages/pipingBags.avif" alt="Piping bags with coloured icing" height="100px" width="150px" style="float:right"/>
+            <img src="backgroundImages/cupcakeCases.jpg" alt="Cupcake cases" height="100px" style="float:right"/>
+            <ul>
+                <li>Muffin tray</li>
+                <li>Cupcake liners</li>
+                <li>Stand mixer or handheld mixer</li>
+                <li>2 Medium bowls</li>
+                <li>Large mixing bowl</li>
+                <li>Spatula</li>
+                <li>Piping bag</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting Rachael's Recipes! If you require any further details please contact:</p>
+        <a href="rachaelsrecipes@recipes.com">rachaelsrecipes@recipes.com</a>
+    </footer>
+
+    <!-- Javascript for user's theme preference -->
+    <script src="/Scripts/themePreference.js"></script>
+</body>
+
+</html>

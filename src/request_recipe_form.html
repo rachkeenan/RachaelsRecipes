@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recipe Blog"><title>Home page</title>
+    
+    <title>Recipe Request</title>
+    
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lustria|Snippet|Imprima">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" type="text/javascript"></script>
+    
+    <!-- JavaScript for dark/light mode theme -->
+    <script src="/Scripts/themeSwitcher.js"></script>
+
+    <!-- JavaScript for changing font size -->
+    <script src="/Scripts/accessibility.js"></script>
+
+    <!-- jQuery -->
+    <script>
+        $(document).ready(function () {
+            $("button").hover(function(){
+                $("button").css("border", "#241f1a solid 2px").css("font-size", "12px").css("padding", "7px, 15px")
+                $(this).text("Submit 📤");
+            },
+            function(){
+                $("button").css("border", "none").css("font-size", "10px").css("padding", "5px, 10px")
+                $(this).text("Submit");
+            });
+        });
+    </script>
+
+    <style>
+        h1{
+            font-family: "Snippet", sans-serif;
+            font-size: 35px;
+            font-weight: bolder;
+            text-shadow: 4px 4px 4px #ababab;
+        }
+
+        h2 {
+            font-family: "Lustria", sans-serif;
+        }
+
+        body{
+            font-family: "Imprima", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="request_recipe_form.html">Request Recipe</a></li>
+                <li>
+                    <input id="darkModeCheckbox" type="checkbox" hidden onchange="toggleDarkMode(this.checked);" />
+                    <label id="darkModeLabel" for="darkModeCheckbox">🌙</label>
+                </li>
+                <li>
+                    <input id="setFontSmall" type="checkbox" hidden onchange="setFontSize('1em');" />
+                    <label class="font" id="setFontSmallLabel" for="setFontSmall">A<sup>-</sup></label>
+                    <input id="setFontLarge" type="checkbox" hidden onchange="setFontSize('2em');" />
+                    <label class="font" id="setFontLargeLabel" for="setFontLarge">A<sup>+</sup></label>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Rachael's Recipes</h1>
+            <p>
+                Rachael's Recipes incorporates all of the recipes I enjoy to cook and bake, I hope you enjoy them as
+                much as
+                my family and myself.
+                Please feel free to send an email if you have any questions or submit a recipe request form.
+                Enjoy all of the tasty treats!!
+            </p>
+        </main>
+    </header>
+
+    <main>
+        <form>
+            <p>Please submit the form below if there are any recipes you would like to see on my website.</p>
+            <table>
+                <tr>
+                    <td>
+                        <textarea id="txtarea" name="yourName" rows="1" cols="40"
+                            placeholder="Enter your name"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="recipeType" name="recipeType">
+                            <option>Recipe category</option>
+                            <option value="baking">Baking</option>
+                            <option value="cooking">Cooking</option>
+                            <option value="pastry">pastry</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="txtarea" name="recipeName" rows="1" cols="40"
+                            placeholder="Enter recipe name:"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="txtarea" name="comments"
+                            placeholder="Tell me more about this recipe. Do you have any dietary requirements, etc. Or any other comments"
+                            rows="10" cols="40"></textarea>
+                    </td>
+                </tr>
+            </table> 
+            <div>
+                <button class="submitButton"><a href="submission_page.html">Submit</a></button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>Thank you for visiting Rachael's Recipes! If you require any further details please contact:</p>
+        <a href="rachaelsrecipes@recipes.com">rachaelsrecipes@recipes.com</a>
+    </footer>
+
+    <!-- Javascript for user's theme preference -->
+    <script src="/Scripts/themePreference.js"></script>
+</body>
+
+</html>
